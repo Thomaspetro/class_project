@@ -1,4 +1,9 @@
-
+ <?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+?> 
+<?php include('server.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,9 +15,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Echo Messages -->
+<?php if (isset($_SESSION['message'])): ?>
+<div class="msg">
+<?php
+echo $_SESSION['message'];
+unset($_SESSION['message']);
+?>
+</div>
+<?php endif ?>
+<!-- End Echo of Messages -->
     
     <form action="register.php" method="POST">
-        <h1>Registration Form of Students</h1>
+        <h1>INVIGILATION FORM</h1>
+        <h2>Register now</h2>
         <div class="BOX">
             <label for="userName">UserName</label>
         <input type="text" name= name id= userName required></div>
@@ -34,8 +50,11 @@
         
         </div>
         <input type="submit" name= "john"  value="Sign up">
-        <p>Aleardy a user <a href="login.html"> login </a></p>
+        <p>Aleardy a user <a href="login.php"> login </a></p>
 
     </form>
+    <?php $results = mysqli_query($conn, "SELECT * FROM employeee"); ?>
+
+
 </body>
 </html>

@@ -2,16 +2,16 @@
 <body>
     welcome
 <?php
-echo $_POST["userName"];?> <br>
+echo $_GET['userName'];?> <br>
 your email is:
 <?php
-echo $_POST["Email"];?><br>
-and pasword is:
+echo $_GET['Email'];?><br>
+and pasword is: 
 <?php
-echo $_POST["Password"];
+echo $_POST['Password'];
 ?>
 <?php
-echo $_POST["Comfirm Password"];
+echo $_POST['Comfirm Password'];
 ?>
 </body>
 </html>

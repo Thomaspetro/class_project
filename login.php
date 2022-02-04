@@ -15,7 +15,7 @@
             justify-content: center;
         }
         .BOX{
-            
+            width: 20%;
             margin: auto;
             padding: 10px;
             background-color: turquoise;
@@ -23,6 +23,7 @@
             justify-content: center;
             align-items: center;
             height:10vh;
+    
 
         }
         .BOX,input{
@@ -46,10 +47,10 @@
 
     </style>
 
-    <link rel="stylesheet" href="registration.html">
+    <link rel="stylesheet" href="registration.php">
 </head>
 <body>
-    <form action="login.html" method="POST">
+    <form action="login.php" method="POST">
         <h1>login</h1>
         <div class="BOX">
             <label for="userName">UserName</label>
@@ -64,7 +65,7 @@
         </div>
         
         <input type="submit" value="login" id="button">
-        <p>I'm not a user <a href="registration.html"> Click to Signup</a></p>
+        <p>I'm not a user <a href="registration.php"> Click to Signup</a></p>
 
     </form>
     
