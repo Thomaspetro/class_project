@@ -1,31 +1,54 @@
 body{ 
-    background-color: brown;
+  
     background-image: url(exam.jpg);
     margin:0%;
     padding:10px;
     display: flex;
-justify-content: center;
-width:80%;
+    justify-content:right;
+    width:90%;
+
 
 }
+.form-BOX{
+    background:rgb(202, 152, 59);
+    display:block;
+    justify-content: center;
+    align-content: center;
+    width:auto;
+    height:50%vh;
+    border-radius:10px;
+}
 .BOX{
-   
-    background:cadetblue;
-    display: flex;
+   border-radius: 5px;
+    padding: 5px;
+    display:flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
-    border-radius: 5px;
-    
+
+    width: auto;
+
+
 }
-.BOX,input{
+.BOX ,input{
     display: block;
-    font-family: sans-serif;
-    font-size: medium;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    width:80%;
 }
 .BOX, label{
-    border-radius: 5px;
-    padding:10px;
-    width:100%;
+    display: block;
+    font-family: sans-serif;
+     
+}
+.btn{
+    background-color: aquamarine;
+   padding: 5px;
+   width: 30%;
+}
+.BOX,h2{
+ font-stretch: ultra-expanded;
+ background-color: aliceblue;
+ align-items:center;
 
 }

@@ -9,38 +9,46 @@
         body{
             margin: 0%;
             padding: 0%;
-            background-color:white;
+            background-image: url(IMG.jpg);
             display:flex;
             align-items: center;
             justify-content: center;
         }
-        .BOX{
-            width: 20%;
+        .Container{
+            display:block;
+            width:auto;
             margin: auto;
-            padding: 10px;
-            background-color: turquoise;
-            display: flex;
+            padding:top: 10px;
+            background-color:turquoise;
             justify-content: center;
             align-items: center;
-            height:10vh;
+            height:35vh;
+            border-radius :5px;
     
 
         }
-        .BOX,input{
-            font-family: sans-serif;
-            display: block;
-            font-size: 15;
-        }
-        .BOX,label{
-            width: 100%;
+        .form-group,input{
+            margin bottom: 20px;
+            padding:10px;
             border-radius: 5px;
+            width:90%;
+            display: block;
+           
+        .label{
+            font-family: sans-serif;
             padding: 5px;
+            padding bottom: 20px;
+        }
+        }
+        .form-group{
+            background-color:burlywood;
+            padding: 10px;
+            width: 30%;
 
         }
-        #button{
-            background-color:burlywood;
+        .btn{
+            
             padding: 5px;
-            width: 30%;
 
         }
 
@@ -51,22 +59,20 @@
 </head>
 <body>
     <form action="login.php" method="POST">
-        <h1>login</h1>
-        <div class="BOX">
-            <label for="userName">UserName</label>
-        <input type="text" name= name id= userName required></div>
-        
-        </div>
-        
-        <div class="BOX">
-            <label for="Password">Password</label>
-        <input type="Password" name= name id= Password required></div>
-        
-        </div>
-        
-        <input type="submit" value="login" id="button">
-        <p>I'm not a user <a href="registration.php"> Click to Signup</a></p>
-
+       
+        <div class="Container">
+        <h1>login here!</h1>
+        <div class="form-group>
+        <label for= "username"> UserName</label>
+        <input type="text" name="name" id="username" >
+    </div>
+        <div class="form-group>
+        <label for="password">Password<a href="registration.php"> ForgotPassword<a></label>
+        <input type="Password"name="name" id="Password">
+        <button type="submit" class="btn" value="login">login</button>
+        <p>I am not a member<a href="registration.php">Click to Signup</a></p>
+    </div>
+    </div>
     </form>
     
 </body>
