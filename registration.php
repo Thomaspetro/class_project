@@ -18,8 +18,9 @@ error_reporting(E_ALL);
 </head>
 <body>
     
-<?php if (isset($_SESSION['message'])): ?>
-<div class="msg">
+<?php if (isset($_SESSION['username'])): ?>
+
+
 <?php
 echo $_SESSION['message'];
 unset($_SESSION['message']);
@@ -28,7 +29,7 @@ unset($_SESSION['message']);
 <?php endif ?>
 
     
-    <form action="db.php" method="POST">
+    <form action="" method="POST">
        <div class="logo"></div>
         <div class="form-BOX"> 
           
@@ -38,29 +39,27 @@ unset($_SESSION['message']);
     
     
         <label for="userName">UserName</label>
-    <input type="text" name= name id= userName required>
+    <input type="text" name= "username" id= "username" required>
     </div>
     <div class="BOX">
         <label for="email">Email</label>
-    <input type="text" name= name id= email required>
+    <input type="text" name="email" id= "email" required>
     </div>
     <div class="BOX">
         <label for="Password">Password</label>
-    <input type="Password" name= name id= Password required>
+    <input type="Password" name="password" id= "Password"required>
     </div> 
     <div class="BOX">
         <label for=" ComfirmPassword"> Comfirm Password</label>
-    <input type="Password" name= name id= ComfirmPassword required>
-    <input class="btn" type="submit" name= "save"  value="Sign up">
+    <input type="Password" name="comfirmpassword" id= "comfirmpassword" required>
+    <input class="btn" type="submit" name="save"  value="Sign up">
     <p>Aleardy a user <a href="login.php"> login </a></p>
     </div>
  </div>
 </div>
         
     </form>
-    <?php $results = mysqli_query($conn, "INSERT INTO employeee(userName, Email,Password,Comfirm Password) VALUES ('$name','$email','$pass','$comf')");
-    $_SESSION['message']="$name Email saved"; ?>
-
+    
 
  </body>
 </html>

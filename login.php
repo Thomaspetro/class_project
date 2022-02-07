@@ -10,10 +10,11 @@
         body{
             margin: 0%;
             padding: 0%;
-            background-image: url(IMG.jpg);
+            background-image: url(duty.jpg);
             display:flex;
             align-items: center;
-            justify-content: center;
+            justify-content:right;
+            width:80%;
         }
         .Container{
             display:block;
@@ -66,14 +67,14 @@
          <h1>INVIGILATORS</h1>
         <h2>login here!</h2>
         <div class="form-group>
-        <label for= "username"> UserName</label>
-        <input type="text" name="name" id="username" >
+        <label for= "email">Email</label>
+        <input type="text" name="email" id="email" >
     </div>
         <div class="form-group>
-        <label for="password">Password<a href="registration.php"> ForgotPassword<a></label>
-        <input type="Password"name="name" id="Password">
-        <button type="submit" class="btn" value="login">login</button>
-        <p>I am not a member<a href="registration.php">Click to Signup</a></p>
+        <label for="password"> Password <a href="registration.php"> Forgot password<a></label>
+        <input type="Password"name="password" id="Password">
+        <button type="submit" class="btn" name='login'>login</button>
+        <p>I am not a member<a href="registration.php"> Click to register</a></p>
     </div>
     </div>
     </form>
