@@ -1,3 +1,4 @@
+<?php include 'server.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,17 +19,17 @@
             display:block;
             width:auto;
             margin: auto;
-            padding:top: 10px;
+            padding:10px;
             background-color:turquoise;
             justify-content: center;
             align-items: center;
-            height:35vh;
+            height:40vh;
             border-radius :5px;
     
 
         }
         .form-group,input{
-            margin bottom: 20px;
+            margin bottom:20px;
             padding:10px;
             border-radius: 5px;
             width:90%;
@@ -44,6 +45,7 @@
             background-color:burlywood;
             padding: 10px;
             width: 30%;
+            margin bottom:10px;
 
         }
         .btn{
@@ -61,7 +63,8 @@
     <form action="login.php" method="POST">
        
         <div class="Container">
-        <h1>login here!</h1>
+         <h1>INVIGILATORS</h1>
+        <h2>login here!</h2>
         <div class="form-group>
         <label for= "username"> UserName</label>
         <input type="text" name="name" id="username" >

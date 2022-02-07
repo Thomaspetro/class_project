@@ -6,8 +6,6 @@ error_reporting(E_ALL);
 <?php
 session_start();
 include 'db.php';
-
-// initialize variable
 $name= "";
 $email= "";
 $id=0;
@@ -22,8 +20,8 @@ if(isset($_POST['submit'] )){
     mysqli_query($conn,"INSERT INTO employeee(userName, Email,Password,Comfirm Password) VALUES ('$name','$email','$pass','$comf')");
     $_SESSION['message']="$name Email saved";
     header('location:registration.php');
-          
-}
+}     
+
 if (isset($_POST['update'])) {
 $id = $_POST['id'];
 $name = $_POST['userName'];
@@ -33,6 +31,10 @@ WHERE id=$id");
 $_SESSION['message'] = "$name Email updated!";
 header('location:registration.php');
 
+
 }
+
+
+
 
 ?>
